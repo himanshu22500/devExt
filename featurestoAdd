@@ -1,0 +1,14 @@
+Complete page refresh after 15 mins 
+Extension to be used only on scalar.com
+Hold the refresing for 30 sec once the doubt is loaded or sound is playing
+
+
+One possible solution for pausing the refresh could be to maintain 
+a pause variable and if it is false -> refresh else 
+don't refresh
+
+Start with pause is false and 
+when you set pause = true
+
+just set timeout to make isPause = False
+
