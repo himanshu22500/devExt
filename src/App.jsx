@@ -23,6 +23,7 @@ function App() {
             await setTimeout(() => {
               beat.pause()
             }, 2000);
+            console.log('Playing Audio Doubt Arrived....')
           } else if (liveDoubtContainer) {
             const filePath = 'https://raw.githubusercontent.com/himanshu22500/genInvoice/main/call-to-attention-123107.mp3';
             let beat = await new Audio(filePath)
@@ -30,6 +31,7 @@ function App() {
             await setTimeout(() => {
               beat.pause()
             }, 2000);
+            console.log('Playing Audio Doubt Arrived....')
           }
         }, 1000);
 
@@ -70,7 +72,7 @@ function App() {
       args: [checkingIntervalId],
       func: async () => {
         clearInterval(checkingIntervalId)
-        console.log('Stopped Refreshing....')
+        console.log('Stopped Checking for Doubts on Page...')
       }
     });
   }
@@ -84,6 +86,7 @@ function App() {
       args: [refreshingIntervalId],
       func: async () => {
         clearInterval(refreshingIntervalId)
+        console.log('Stopped Refreshing....')
       }
     });
   }
